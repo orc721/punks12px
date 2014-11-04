@@ -1,4 +1,11 @@
 Beerday::Application.routes.draw do
+
+  get 'beers' => 'beers#index'
+  get 'beers/index'
+
+  get 'breweries' => 'breweries#index'
+  get 'breweries/index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
