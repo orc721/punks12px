@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Beerday</title>
+  <title>Beer-A-Day - Austria</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+
+<div class='header'>
+   <a href='/'>Beer-A-Day</a>
+   -  Cheers, Prost, Kampai, Na zdravi, Salute, 乾杯, Skål, Egészségedre!
+   - <a href='/breweries'>Breweries A-Z</a>
+ <!--
+   - Breweries by Locality
+   -->
+</div>
+
 <%= yield %>
+
+
+<div class='footer'>
+  <a href="http://groups.google.com/group/beerdb">Questions? Comments? Updates?</a>  - 
+   <a href="https://github.com/openbeer">An Open Data Project by beer.db.</a>
+</div>
+
 
 </body>
 </html>

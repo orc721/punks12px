@@ -2,7 +2,7 @@
 class BreweriesController < ApplicationController
 
   def index
-    @breweries = Brewery.order(:id)
+    ## see view
   end
 
 end

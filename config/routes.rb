@@ -6,6 +6,8 @@ Beerday::Application.routes.draw do
   get 'breweries' => 'breweries#index'
   get 'breweries/index'
 
+  root :to => 'date#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
