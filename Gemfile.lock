@@ -1,6 +1,27 @@
+GIT
+  remote: https://github.com/openbeer/at-austria.git
+  revision: 0205bff1cbb891c6454e4872386b68321bb20ce5
+  specs:
+    beerdb-data-at (99)
+
+GIT
+  remote: https://github.com/openmundi/austria.db.git
+  revision: 15f786f94f5b4bf175caea6ba1897e5cda814083
+  specs:
+    worlddb-data-at (99)
+
+GIT
+  remote: https://github.com/openmundi/world.db.git
+  revision: fa67418028e8a9df7ae2bcab3ea6a7a9b89a9f65
+  specs:
+    worlddb-data (99)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    about (0.1.0)
+      logutils (>= 0.5)
+      textutils (>= 0.7)
     actionmailer (3.2.14)
       actionpack (= 3.2.14)
       mail (~> 2.5.4)
@@ -22,13 +43,26 @@ GEM
       activesupport (= 3.2.14)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
+    activerecord-utils (0.2.0)
+      logutils
     activeresource (3.2.14)
       activemodel (= 3.2.14)
       activesupport (= 3.2.14)
     activesupport (3.2.14)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    annotate (2.4.1.beta1)
     arel (3.0.3)
+    beerdb (0.9.9)
+      activerecord
+      activerecord-utils
+      fetcher (>= 0.3)
+      gli (>= 2.5.6)
+      logutils
+      props
+      tagutils
+      textutils
+      worlddb (>= 2.0.2)
     builder (3.0.4)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -37,8 +71,15 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    daemons (1.1.9)
+    dbbrowser (0.1.3)
+      logutils (>= 0.5)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     execjs (2.2.2)
+    fetcher (0.4.3)
+      logutils (>= 0.6)
+    gli (2.12.2)
     hike (1.2.3)
     i18n (0.6.11)
     journey (1.0.4)
@@ -46,15 +87,20 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    logutils (0.6.0)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.10.1)
+    pg (0.17.1)
     polyglot (0.3.5)
+    props (1.1.1)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
+    rack-protection (1.5.3)
+      rack
     rack-ssl (1.3.4)
       rack
     rack-test (0.6.2)
@@ -82,12 +128,27 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    sinatra (1.4.5)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
     sprockets (2.2.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.10)
+    tagutils (0.2.2)
+      activerecord
+      logutils (>= 0.6)
+    textutils (0.9.5)
+      activesupport
+      logutils
+      props
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
     thor (0.19.1)
     tilt (1.4.1)
     treetop (1.4.15)
@@ -97,14 +158,35 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    worlddb (2.0.4)
+      activerecord
+      gli (>= 2.9)
+      logutils
+      props
+      tagutils
+      textutils (>= 0.9.4)
+    worlddb-flags (0.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  about
+  annotate (~> 2.4.1.beta)
+  beerdb (= 0.9.9)
+  beerdb-data-at (= 99)!
   coffee-rails (~> 3.2.1)
+  dbbrowser
   jquery-rails
+  logutils
+  pg
   rails (= 3.2.14)
   sass-rails (~> 3.2.3)
+  sinatra
   sqlite3
+  thin
   uglifier (>= 1.0.3)
+  worlddb
+  worlddb-data (= 99)!
+  worlddb-data-at (= 99)!
+  worlddb-flags (= 0.1.0)

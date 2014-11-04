@@ -2,10 +2,52 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'sinatra', require: 'sinatra/base'
 
-gem 'sqlite3'
+
+gem 'logutils'
+gem 'worlddb'
+gem 'beerdb', '0.9.9'
+
+
+#########################
+# data
+
+gem 'worlddb-data',    '99', :git => 'https://github.com/openmundi/world.db.git'
+gem 'worlddb-data-at', '99', :git => 'https://github.com/openmundi/austria.db.git'
+
+gem 'beerdb-data-at',    '99', :git => 'https://github.com/openbeer/at-austria.git'
+
+
+##################################
+# logos
+
+gem 'worlddb-flags', '0.1.0'   # use bundled country flags
+
+
+########
+# add engines
+
+## fix:
+### gem 'beerdb-admin', '0.0.1', path: './engine'
+
+##########
+# add sinatra (mountable) app(let)s
+
+gem 'about'      # mountable app - about - sys info pages
+gem 'dbbrowser'  # mountable app
+
+
+
+group :production do
+  gem 'pg'
+  gem 'thin'    # use faster multiplexed (w/ eventmachine) web server
+end
+
+group :development do
+  gem 'sqlite3'
+  gem 'annotate', '~> 2.4.1.beta'
+end
 
 
 # Gems used only for assets and not required
@@ -21,18 +63,3 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
