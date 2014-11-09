@@ -25,7 +25,7 @@ end
 
 
 
-ZIP_PATH    = './tmp'
+ZIP_PATH    = "#{Rails.root}/tmp"
 
 WORLD_URL        = 'https://github.com/openmundi/world.db/archive/master.zip'
 WORLD_ZIP_NAME   = 'world.db'
@@ -45,10 +45,20 @@ BE_BEER_ZIP_NAME  = 'be-belgium'
 BE_BEER_ZIP = "#{ZIP_PATH}/#{BE_BEER_ZIP_NAME}.zip"
 
 
-desc 'download world.db zip archive to /tmp/world.db.zip'
-task :dl_world do
-  puts "pwd: #{Dir.pwd}"  ## for debugging - print current working directory
+task :debug_tmp do
+  puts "pwd:        >>#{Dir.pwd}<<"  ## for debugging - print current working directory
+  puts "zip_path:   >>#{ZIP_PATH}<<"
+  puts "Rails.root: >>#{Rails.root}<<"
 
+  ## check if zip file exists
+  puts "WORLD_ZIP    size: #{File.size(WORLD_ZIP)} bytes"   if File.exists?(WORLD_ZIP)
+  puts "AT_BEER_ZIP  size: #{File.size(AT_BEER_ZIP)} bytes" if File.exists?(AT_BEER_ZIP)
+  puts "BE_BEER_ZIP  size: #{File.size(BE_BEER_ZIP)} bytes" if File.exists?(BE_BEER_ZIP)
+end
+
+
+desc 'download world.db zip archive to /tmp/world.db.zip'
+task :dl_world => [:debug_tmp] do
   dowload_archive( WORLD_URL, WORLD_ZIP )
 end
 
