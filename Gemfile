@@ -7,17 +7,9 @@ gem 'sinatra', require: 'sinatra/base'
 
 gem 'logutils'
 gem 'worlddb'
-gem 'beerdb', '0.9.9'
+gem 'beerdb', '0.9.13'
 
-
-#########################
-# data
-
-gem 'worlddb-data',    '99', :git => 'https://github.com/openmundi/world.db.git'
-gem 'worlddb-data-at', '99', :git => 'https://github.com/openmundi/austria.db.git'
-
-gem 'beerdb-data-at',    '99', :git => 'https://github.com/openbeer/at-austria.git'
-
+gem 'fetcher'   # for downloading zips etc.
 
 ##################################
 # logos
@@ -63,3 +55,4 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
