@@ -11,6 +11,8 @@ gem 'beerdb', '0.9.13'
 
 gem 'fetcher'   # for downloading zips etc.
 
+gem 'bourbon', '1.4.0' # scss mixins (see http://thoughtbot.com/bourbon)
+
 ##################################
 # logos
 
@@ -20,8 +22,7 @@ gem 'worlddb-flags', '0.1.0'   # use bundled country flags
 ########
 # add engines
 
-## fix:
-### gem 'beerdb-admin', '0.0.1', path: './engine'
+gem 'beerdb-admin'
 
 ##########
 # add sinatra (mountable) app(let)s

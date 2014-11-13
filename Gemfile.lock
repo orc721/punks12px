@@ -46,6 +46,9 @@ GEM
       tagutils
       textutils
       worlddb (>= 2.0.2)
+    beerdb-admin (0.1.2)
+    bourbon (1.4.0)
+      sass (>= 3.1)
     builder (3.0.4)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -60,7 +63,7 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.2.2)
-    fetcher (0.4.3)
+    fetcher (0.4.4)
       logutils (>= 0.6)
     gli (2.12.2)
     hike (1.2.3)
@@ -160,6 +163,8 @@ DEPENDENCIES
   about
   annotate (~> 2.4.1.beta)
   beerdb (= 0.9.13)
+  beerdb-admin
+  bourbon (= 1.4.0)
   coffee-rails (~> 3.2.1)
   dbbrowser
   fetcher
