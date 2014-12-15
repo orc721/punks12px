@@ -4,7 +4,25 @@ class DateController < ApplicationController
 
   def index
 
+    ## check if beer of day exists in db
+    ##  if not creaty entry (always - use the same beer of the day as stored/recorded in db)
+
     @date = Date.today
+
+    day = Day.find_by_date( @date )
+
+    if day.nil?
+      ### todo: use self.rnd from activerecord-utils
+      ## get random beer (of the day) for now
+
+      rnd_offset = rand( Beer.count ) ## NB: call "global" std lib rand
+      @beer = Beer.offset( rnd_offset ).limit( 1 ).first
+      
+      Day.create!( date: @date, beer: @beer )
+    else
+      @beer = day.beer
+    end
+
 
     ## puts "day:   #{@date.day}"
     ## puts "month: #{@date.month}"
@@ -16,11 +34,6 @@ class DateController < ApplicationController
     @date_week      = @date.strftime('%W').to_i+1 ## e.g. 1,2,3,etc.
 
 
-    ### todo: use self.rnd from activerecord-utils
-    ## get random beer (of the day) for now
-
-    rnd_offset = rand( Beer.count ) ## NB: call "global" std lib rand
-    @beer = Beer.offset( rnd_offset ).limit( 1 ).first
 
     @beer_facts = beer_facts( @beer )
   end

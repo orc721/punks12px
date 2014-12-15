@@ -9,7 +9,6 @@ class CreateDb < ActiveRecord::Migration
     TagDb.create           # tags n taggings tables
     WorldDb.create
     BeerDb.create
-
   end
 
   def down

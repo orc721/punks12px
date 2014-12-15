@@ -6,6 +6,13 @@ Beerday::Application.routes.draw do
 
   get 'breweries' => 'breweries#index'
   get 'breweries/index'
+  
+  get 'days' => 'days#index'
+  get 'days/index'
+
+  get 'feed' => 'feed#index'
+  get 'feed/index'
+
 
   mount About::Server,     :at => '/sysinfo'
   mount DbBrowser::Server, :at => '/browse'

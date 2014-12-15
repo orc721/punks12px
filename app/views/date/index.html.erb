@@ -65,6 +65,7 @@
        <div class='beer-info'>
             <%= @beer_facts =%>
        </div>
+<% if @beer.brewery %>
       <div class='brewery'>
          <%= @beer.brewery.title %>
          <% if @beer.brewery.founded %>
@@ -83,6 +84,13 @@
          <%= @beer.brewery.region.name %>  › 
          <%= @beer.brewery.country.name %>
       </div>
+<% else %>
+ <!-- brewery info missing -->
+  <div class='brewery'>
+       ???
+  </div>
+<% end %>
+
       <div class='beer-fotos'>
         
       </div>

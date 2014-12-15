@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 1) do
+ActiveRecord::Schema.define(:version => 2) do
 
   create_table "beers", :force => true do |t|
     t.string   "key",                           :null => false
@@ -149,6 +149,13 @@ ActiveRecord::Schema.define(:version => 1) do
 
   add_index "countries", ["code"], :name => "index_countries_on_code", :unique => true
   add_index "countries", ["key"], :name => "index_countries_on_key", :unique => true
+
+  create_table "days", :force => true do |t|
+    t.date     "date",       :null => false
+    t.integer  "beer_id",    :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "langs", :force => true do |t|
     t.string   "key",        :null => false
