@@ -33,18 +33,6 @@ class DateController < ApplicationController
     @date_dayname   = Date::DAYNAMES[@date.wday]  ## e.g. Sunday, Monday
     @date_week      = @date.strftime('%W').to_i+1 ## e.g. 1,2,3,etc.
 
-
-
-    @beer_facts = beer_facts( @beer )
-  end
-
-  def beer_facts( beer )
-    buf = ''
-    facts = []
-    facts << "#{beer.abv}%" if beer.abv.present?
-    facts << "#{beer.og}°" if beer.og.present?
-    buf << "(#{facts.join(', ')})" if facts.size > 0
-    buf
   end
 
 end

@@ -2,17 +2,19 @@
 Beerday::Application.routes.draw do
 
   get 'beers' => 'beers#index'
-  get 'beers/index'
+  ## get 'beers/index'
 
   get 'breweries' => 'breweries#index'
-  get 'breweries/index'
+  ## get 'breweries/index'
   
   get 'days' => 'days#index'
-  get 'days/index'
+  ## get 'days/index'
 
   get 'feed' => 'feed#index'
-  get 'feed/index'
+  ## get 'feed/index'
 
+  get 'date' => 'date#index'
+  ## get 'date/index'
 
   mount About::Server,     :at => '/sysinfo'
   mount DbBrowser::Server, :at => '/browse'
