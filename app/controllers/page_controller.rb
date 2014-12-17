@@ -1,14 +1,21 @@
 # encoding: utf-8
 
-class DateController < ApplicationController
+class PageController < ApplicationController
 
   def index
 
+    if params[:date]
+      ## note: allow 2015/01/01 and 2015.01.01
+      @date = Date.strptime( params[:date].gsub(/[\/.]/, '-'), '%Y-%m-%d' )
+    elsif params[ :day ]
+      ## assume current year (plus add x days from Jan/1)
+      @date = Date.new( Date.today.year,1,1 ) + (params[:day].to_i-1)
+    else
+      @date = Date.today
+    end
+
     ## check if beer of day exists in db
     ##  if not creaty entry (always - use the same beer of the day as stored/recorded in db)
-
-    @date = Date.today
-
     day = Day.find_by_date( @date )
 
     if day.nil?

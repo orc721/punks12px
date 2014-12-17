@@ -2,7 +2,7 @@
 class DaysController < ApplicationController
 
   def index
-    @days = Day.order(:date)
+    @days = Day.order( 'date DESC' )
   end
 
 end

@@ -1,20 +1,12 @@
 
 Beerday::Application.routes.draw do
 
-  get 'beers' => 'beers#index'
-  ## get 'beers/index'
-
+  get 'beers'     => 'beers#index'
   get 'breweries' => 'breweries#index'
-  ## get 'breweries/index'
-  
-  get 'days' => 'days#index'
-  ## get 'days/index'
+  get 'days'      => 'days#index'
+  get 'feed'      => 'feed#index'
+  get 'page'      => 'page#index'
 
-  get 'feed' => 'feed#index'
-  ## get 'feed/index'
-
-  get 'date' => 'date#index'
-  ## get 'date/index'
 
   mount About::Server,     :at => '/sysinfo'
   mount DbBrowser::Server, :at => '/browse'
@@ -24,6 +16,6 @@ Beerday::Application.routes.draw do
 
   mount BeerDbAdmin::Engine, :at => '/db' 
 
-  root :to => 'date#index'
+  root :to => 'page#index'
 
 end
