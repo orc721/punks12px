@@ -27,14 +27,15 @@ nums.each do |num|
 end
 
 
-write_json( "./items.js", items )
+path = "./docs/items.js"
+write_json( path, items )
 
 ## hack to add const items = upfront
 buf  = "// items.js generated on #{Time.now.utc}\n"
 buf += "\n"
 
-buf += " const items = " + read_text( "./items.js" )
-write_text( "./items.js", buf )
+buf += " const items = " + read_text( path )
+write_text( path, buf )
 
 puts "bye"
 
