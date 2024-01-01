@@ -17,16 +17,20 @@ items = JSON.parse( txt )
 pp items[0,2]
 
 
-## note: MUST start at 0!!!!
-#  items = items[0,10000]    ## cut-off - first 100, etc.
-items = items[0,100]
-items.each_with_index do |item,i|
+## last run
+## continue at ==> 5184/9999
+
+
+###  items = items[0,10000]    ## cut-off - first 100, etc.
+# items = items[0,100]
+(9900..9999).each do |i|
     num = '%04d' % i
     path = "./hashcheck/#{num}.json"
 
     if File.exist?( path )
         ## skip; already checked
     else
+      item = items[i]
         ## note: start counting at 0/0
       puts "==> #{i}/#{items.size-1} #{item['name']}..."
       hash = item['id']
