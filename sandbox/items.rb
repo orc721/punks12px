@@ -11,14 +11,19 @@ nums = (0..9999)
 nums.each do |num|
    puts "==> #{num}"
    name = "%04d" % num
-   blob = read_blob( ".//i/punk#{name}.png" )
+   blob = read_blob( "./i/punk#{name}.png" )
 
    hash = Digest::SHA256.hexdigest( blob )
  
    puts hash
 
-   inscriptionNumber =  1
-
+   ## check if taken - must have hashckeck result
+   inscriptionNumber =  if File.exist?( "./hashcheck/#{name}.json" )
+                           2024  ## return dummy (not 1) for now 
+                        else
+                           1
+                        end 
+  
    items << { id: hash,
               name: "##{num}",
               image: "https://github.com/orc721/punks12px/raw/master/i/punk#{name}.png",
