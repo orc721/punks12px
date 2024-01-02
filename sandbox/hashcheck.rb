@@ -23,7 +23,7 @@ pp items[0,2]
 
 ###  items = items[0,10000]    ## cut-off - first 100, etc.
 # items = items[0,100]
-(9900..9999).each do |i|
+(8295..9999).each do |i|
     num = '%04d' % i
     path = "./hashcheck/#{num}.json"
 
