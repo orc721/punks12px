@@ -22,14 +22,9 @@ counter = counter.sort { |l,r| l[1]<=>r[1] }
 counter.each do |name,count|
   percent =  Float(count*100)/Float(recs.size)
 
-  key = name.gsub( ' ', '_' )
-  puts "| ![](i/#{key}@4x.png) %-12s  | %4d  (%5.2f %%)" % [name, count, percent]
+  key = name.downcase.gsub( ' ', '_' )
+  puts "| ![](i/#{key}@4x.png) %-12s  | %4d  (%5.2f %%) |" % [name, count, percent]
 end
-
-counter.each do |name,count|
-  puts "  #{name}"
-end
-
 
 puts "  #{counter.size} type(s)"
 

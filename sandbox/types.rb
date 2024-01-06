@@ -42,12 +42,12 @@ composite = ImageComposite.new( 5, 5, width: 12, height: 12 )
 
 specs.each_with_index do |rec, i|
     name        = rec[0]
-    key         = name.gsub( ' ', '_' )
+    key         = name.downcase.gsub( ' ', '_' )
     
     img = Punk12::Image.generate( name )
 
     img.save( "./tmp3/#{key}.png" )
-    img.zoom(2).save( "./tmp3/@4x/#{key}@4x.png" )
+    img.zoom(4).save( "./tmp3/@4x/#{key}@4x.png" )
     img.zoom(10).save( "./tmp3/@10x/#{key}@10x.png" )
     
     composite << img  
