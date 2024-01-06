@@ -11,7 +11,7 @@ nums = (0..9999)
 nums.each do |num|
    puts "==> #{num}"
    name = "%04d" % num
-   blob = read_blob( "./i/punk#{name}.png" )
+   blob = read_blob( "./inscribe/punk#{name}.png" )
 
    hash = Digest::SHA256.hexdigest( blob )
  
@@ -26,7 +26,7 @@ nums.each do |num|
   
    items << { id: hash,
               name: "##{num}",
-              image: "https://github.com/orc721/punks12px/raw/master/i/punk#{name}.png",
+              image: "https://github.com/orc721/punks12px/raw/master/inscribe/punk#{name}.png",
               inscriptionNumber: inscriptionNumber
             }
 end
