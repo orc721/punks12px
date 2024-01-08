@@ -2,26 +2,37 @@
 #  to run use:
 #    $ ruby sandbox/types.rb
 
-
+$LOAD_PATH.unshift( "../pixelart/cryptopunks/punks/lib" )
 require 'punks'
 
 
+## 34 types
+
 specs = parse_data( <<DATA )
-  Alien Green
-  Alien Purple Female
-  Skeleton Female
   Blue Female
   Male 2
   Blue
-  Alien Gold
-  Orc Female
+  Skeleton Female
   Skeleton
   Orc
+  Orc Female
   Demon
   Bot
-  Alien
   Ape
+  Alien Gold
+  Alien Female
+  Alien Blue Female
+  Alien Green Female
+  Alien Red Female
+  Alien Purple Female
+  Alien
+  Alien Purple
+  Alien Blue
+  Alien Green
   Zombie
+  Alien Red
+  Alien Magenta Female
+  Alien Orange
   Gold
   Pepe
   Female 4
@@ -34,11 +45,10 @@ specs = parse_data( <<DATA )
   Orange
 DATA
 puts "   #{specs.size} record(s)"
-#=>  25 record(s)
 
 
 
-composite = ImageComposite.new( 5, 5, width: 12, height: 12 )
+composite = ImageComposite.new( 6, 6, width: 12, height: 12 )
 
 specs.each_with_index do |rec, i|
     name        = rec[0]

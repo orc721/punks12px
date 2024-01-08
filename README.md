@@ -67,35 +67,40 @@ id, type, attributes
 
 |  Type                                               | Pop             |
 |-----------------------------------------------------|----------------:|
-| ![](i/alien_green@4x.png) Alien Green   |    1  ( 0.01 %) |
-| ![](i/alien_purple_female@4x.png) Alien Purple Female  |    1  ( 0.01 %) |
-| ![](i/skeleton_female@4x.png) Skeleton Female  |    1  ( 0.01 %) |
 | ![](i/blue_female@4x.png) Blue Female   |    1  ( 0.01 %) |
 | ![](i/male_2@4x.png) Male 2        |    1  ( 0.01 %) |
 | ![](i/blue@4x.png) Blue          |    1  ( 0.01 %) |
-| ![](i/alien_gold@4x.png) Alien Gold    |    1  ( 0.01 %) |
-| ![](i/orc_female@4x.png) Orc Female    |    2  ( 0.02 %) |
+| ![](i/skeleton_female@4x.png) Skeleton Female  |    1  ( 0.01 %) |
 | ![](i/skeleton@4x.png) Skeleton      |    2  ( 0.02 %) |
 | ![](i/orc@4x.png) Orc           |    2  ( 0.02 %) |
+| ![](i/orc_female@4x.png) Orc Female    |    2  ( 0.02 %) |
 | ![](i/demon@4x.png) Demon         |    3  ( 0.03 %) |
 | ![](i/bot@4x.png) Bot           |    4  ( 0.04 %) |
-| ![](i/alien@4x.png) Alien         |    9  ( 0.09 %) |
 | ![](i/ape@4x.png) Ape           |   24  ( 0.24 %) |
+| ![](i/alien_gold@4x.png) Alien Gold    |   24  ( 0.24 %) |
+| ![](i/alien_female@4x.png) Alien Female  |   40  ( 0.40 %) |
+| ![](i/alien_blue_female@4x.png) Alien Blue Female  |   51  ( 0.51 %) |
+| ![](i/alien_green_female@4x.png) Alien Green Female  |   56  ( 0.56 %) |
+| ![](i/alien_red_female@4x.png) Alien Red Female  |   56  ( 0.56 %) |
+| ![](i/alien_purple_female@4x.png) Alien Purple Female  |   58  ( 0.58 %) |
+| ![](i/alien@4x.png) Alien         |   62  ( 0.62 %) |
+| ![](i/alien_purple@4x.png) Alien Purple  |   74  ( 0.74 %) |
+| ![](i/alien_blue@4x.png) Alien Blue    |   80  ( 0.80 %) |
+| ![](i/alien_green@4x.png) Alien Green   |   80  ( 0.80 %) |
 | ![](i/zombie@4x.png) Zombie        |   81  ( 0.81 %) |
-| ![](i/gold@4x.png) Gold          |  236  ( 2.36 %) |
+| ![](i/alien_red@4x.png) Alien Red     |   86  ( 0.86 %) |
+| ![](i/alien_magenta_female@4x.png) Alien Magenta Female  |  114  ( 1.14 %) |
+| ![](i/alien_orange@4x.png) Alien Orange  |  163  ( 1.63 %) |
+| ![](i/gold@4x.png) Gold          |  213  ( 2.13 %) |
 | ![](i/pepe@4x.png) Pepe          |  261  ( 2.61 %) |
-| ![](i/female_4@4x.png) Female 4      |  419  ( 4.19 %) |
-| ![](i/male_4@4x.png) Male 4        |  554  ( 5.54 %) |
-| ![](i/female_1@4x.png) Female 1      | 1097  (10.97 %) |
-| ![](i/female_3@4x.png) Female 3      | 1145  (11.45 %) |
-| ![](i/pink_female@4x.png) Pink Female   | 1171  (11.71 %) |
-| ![](i/male_1@4x.png) Male 1        | 1565  (15.65 %) |
-| ![](i/male_3@4x.png) Male 3        | 1709  (17.09 %) |
-| ![](i/orange@4x.png) Orange        | 1709  (17.09 %) |
-
-
-
-
+| ![](i/female_4@4x.png) Female 4      |  379  ( 3.79 %) |
+| ![](i/male_4@4x.png) Male 4        |  501  ( 5.01 %) |
+| ![](i/female_1@4x.png) Female 1      |  989  ( 9.89 %) |
+| ![](i/female_3@4x.png) Female 3      | 1033  (10.33 %) |
+| ![](i/pink_female@4x.png) Pink Female   | 1057  (10.57 %) |
+| ![](i/male_1@4x.png) Male 1        | 1411  (14.11 %) |
+| ![](i/male_3@4x.png) Male 3        | 1544  (15.44 %) |
+| ![](i/orange@4x.png) Orange        | 1546  (15.46 %) |
 
 
 

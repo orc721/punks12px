@@ -26,6 +26,11 @@ counter.each do |name,count|
   puts "| ![](i/#{key}@4x.png) %-12s  | %4d  (%5.2f %%) |" % [name, count, percent]
 end
 
+counter.each do |name,count|
+  puts name
+end
+
+
 puts "  #{counter.size} type(s)"
 
 
