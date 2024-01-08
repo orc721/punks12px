@@ -22,8 +22,8 @@ specs.each_with_index do |rec, i|
       
      num = "%04d" % i
      puts "==> punk #{num}"
-     # img.save( "./inscribe/punk#{num}.png" )
-     img.zoom(8).save( "./tmp/@8x/punk#{num}@8x.png" )
+     img.save( "./inscribe/punk#{num}.png" )
+     # img.zoom(8).save( "./tmp/@8x/punk#{num}@8x.png" )
 end
 
 
