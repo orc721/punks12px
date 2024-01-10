@@ -28,6 +28,9 @@ pp items[0,2]
 ## ==> 3009/9999 #3009..
 ## 8240
 
+## cont. / restart at.
+## ==> 8651/9999 #8651.
+
 (0..9999).each do |i|
     num = '%04d' % i
     path = "./hashcheck/#{num}.json"
