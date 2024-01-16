@@ -31,8 +31,14 @@ pp items[0,2]
 ## cont. / restart at.
 ## ==> 8651/9999 #8651.
 
-## hash check last 100
-(9900..9999).each do |i|
+ids = (9900..9999)  ## hash check last 100
+
+
+ids = (0..999)   ## hash check first thousand
+ids = (1000..1999)   ## hash check first thousand
+ids = (2000..2999)   ## hash check first thousand
+# ids = (9000..9999)   ## hash check first thousand
+ids.each do |i|
     num = '%04d' % i
     path = "./hashcheck/#{num}.json"
 
