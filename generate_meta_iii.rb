@@ -13,6 +13,11 @@ meta = recs.map { |rec| rec.values }
 ###
 # add more ordinal (sub1k) punks  
 specs = parse_data( <<DATA )
+
+  ## bonus red aliens
+  9935,  Alien Red, Shadow Beard,  Hoodie, Earring                     # inscribe no. 55473236
+  9936,  Alien Red, Luxurious Beard, Hoodie, Laser Eyes Gold, Earring  # inscribe no. 55475227
+
   9937,  Male 4, Cowboy Hat, Tears, Frown      # cowboys dont cry
   
   9938,  Male 2, Birthday Hat, Bubble Gum   #2

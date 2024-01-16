@@ -12,6 +12,9 @@ specs.each_with_index do |rec, i|
      ## note: do NOT regenerate 9987 - blue female type changed (e.g. mouth color)!!!!
      ## 9987, Blue Female, Nerd Glasses / Blonde Short
      next if [9987].include?( i )
+     
+
+     next unless [9935, 9936].include?( i )
 
      base        = rec['type']
      attributes = (rec['attributes'] || '' ).split( '/').map { |attr| attr.strip }
