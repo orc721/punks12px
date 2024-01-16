@@ -13,6 +13,35 @@ meta = recs.map { |rec| rec.values }
 ###
 # add more ordinal (sub1k) punks  
 specs = parse_data( <<DATA )
+ ## orange pilled
+ 9912, Orange,  3D Glasses, Cap Red
+ 9913, Zombie Orange, Crazy Hair
+ 9915, Ape Orange, Knitted Cap, Earring, Bubble Gum
+ 9916, Alien Orange, Spots, Clown Nose, Clown Hair Blue
+
+ 9917, Demon Orange, Laser Eyes, Pipe
+ 9918, Orc Orange,  Eye Mask, Goat, Gold Chain 
+ 9919, Skeleton Orange, Bandana, Cigarette
+ 9920, Vampire Orange,  Purple Hair, Classic Shades
+ 9921, Mummy Orange, Hoodie
+ 9922, Bot Orange, Big Beard
+ 
+ ## the saudis
+ 9923, Male 2, Normal Beard Black,  White Shemagh & Agal,  Laser Eyes Gold
+ 9924, Male 1, Shadow Beard, White Shemagh
+ 9925, Male 3, Mustache, Red Shemagh & Agal, Earring  
+ 9926, Male 2, Luxurious White Beard,  Brown Shemagh & Agal 
+
+ 9927, Male 1, White Shemagh & Gold Agal, Big Shades 
+ 9928, Male 3, Spots, Red Shemagh, Gold Chain, Pipe
+ 9929, Male 1, White Shemagh, Goat, Laser Eyes Gold
+ 9930, Male 2, White Shemagh & Agal, Clown Eyes Green, Clown Nose
+
+ 9931, Male 1, Chinstrap, Red Shemagh & Agal, Horned Rim Glasses  
+ 9932, Male 3, Normal Beard Black, Brown Shemagh & Agal, Small Shades 
+ 9933, Male 2, Shadow Beard, Red Shemagh, Nerd Glasses, Bubble Gum
+ 9934, Orange, White Shemagh & Gold Agal,  Laser Eyes
+
 
   ## bonus red aliens
   9935,  Alien Red, Shadow Beard,  Hoodie, Earring                     # inscribe no. 55473236
