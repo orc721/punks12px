@@ -33,12 +33,13 @@ pp items[0,2]
 
 
 
-ids = (0..999)   ## hash check first thousand
-ids = (1000..1999)   ## hash check first thousand
-ids = (2000..2999)   ## hash check first thousand
-ids = (9000..9999)   ## hash check first thousand
+# ids = (0..999)   ## hash check first thousand
+# ids = (1000..1999)   ## hash check first thousand
+# ids = (2000..9900)   ## hash check first thousand
 
-ids = (9900..9999)  ## hash check last 100
+# ids = (9000..9999)   ## hash check first thousand
+
+ids = (9880..9999)  ## hash check last 100
 
 # ids = [9935, 9936]
 ids.each do |i|

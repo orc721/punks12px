@@ -6,7 +6,7 @@
 require 'cocos'
 
 unminted = []
-(9900..9999).each do |i|
+(9880..9999).each do |i|
     num = '%04d' % i
     path = "./hashcheck/#{num}.json"
 

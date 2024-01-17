@@ -13,6 +13,31 @@ meta = recs.map { |rec| rec.values }
 ###
 # add more ordinal (sub1k) punks  
 specs = parse_data( <<DATA )
+
+
+# readymades 
+9891,  Frida
+9892,  Frida,  3D Glasses
+9894,  Frida (A),  Red Mohawk, Choker, Earcross, Green Lipstick
+9895,  Frida (A), Hoodie Green
+9896,  Frida (A), Hoodie White
+9897,  Frida (A), Hoodie Red
+
+9898, Da Vinci 
+9899, Da Vinci, 3D Glasses
+9900, Da Vinci (A), Laser Eyes
+9902, Da Vinci (A), VR
+
+9903, Van Gogh
+9904, Van Gogh, 3D Glasses
+9905, Van Gogh, Regular Shades
+9906, Van Gogh, Regular Shades, Sun Hat
+
+9907, Shakespeare, Earring
+9908, Shakespeare, 3D Glasses, Earring
+9910, Shakespeare,  Regular Shades, Earring
+9911, Shakespeare,  Clown Eyes Green, Clown Nose, Earring
+
  ## orange pilled
  9912, Orange,  3D Glasses, Cap Red
  9913, Zombie Orange, Crazy Hair
@@ -49,6 +74,7 @@ specs = parse_data( <<DATA )
 
   9937,  Male 4, Cowboy Hat, Tears, Frown      # cowboys dont cry
   
+  ## ordinal punks (sub1k)
   9938,  Male 2, Birthday Hat, Bubble Gum   #2
   9939,  Male 1, Cap Burger King    #7
   9940,  Female 1, Bow  #19
