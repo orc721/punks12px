@@ -16,6 +16,11 @@ specs = parse_data( <<DATA )
 
 
 # readymades 
+9887,  Mundl
+9888,  Mundl, Sun Hat (A)
+9889,  Mundl, Cigarette
+9890,  Mundl, 3D Glasses
+
 9891,  Frida
 9892,  Frida,  3D Glasses
 9894,  Frida (A),  Red Mohawk, Choker, Earcross, Green Lipstick
