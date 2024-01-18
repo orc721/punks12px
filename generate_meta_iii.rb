@@ -15,6 +15,39 @@ meta = recs.map { |rec| rec.values }
 specs = parse_data( <<DATA )
 
 
+# bitmaps
+9856, Bitmap Orange
+9857, Bitmap Orange,  Red Mohawk (BMP)
+9858, Bitmap Orange,  Peak Spike, Regular Shades
+9859, Bitmap Orange,  3D Glasses
+9860, Bitmap Orange,  Laser Eyes
+9861, Bitmap Orange,  Crazy Hair, Nerd Glasses
+9862, Bitmap Orange,  Clown Eyes Green, Clown Nose
+9863, Bitmap Orange,  Jester Hat, Clown Nose
+9864, Bitmap Orange,  Cap Forward, Pipe (BMP)
+9865, Bitmap Orange,  Cap McD
+9866, Bitmap Orange,  Bandana, Regular Shades
+9868, Bitmap Orange,  Purple Hair (BMP), Classic Shades, Earring
+
+9869, Bitmap Pink   
+9870, Bitmap Pink, Blonde Bob (BMP)
+9871, Bitmap Pink, Blonde Bob (BMP), 3D Glasses   
+9872, Bitmap Pink, 3D Glasses   
+9873, Bitmap Pink, Laser Eyes    
+9874, Bitmap Pink, Blonde Side, Big Shades, Gold Chain, Earring   
+9875, Bitmap Pink, Blonde Short, Nerd Glasses   
+9876, Bitmap Pink, Half Shaved Blonde (BMP)   
+9877, Bitmap Pink, Choker, Red Mohawk (BMP), Heart Shades  
+9879, Bitmap Pink, Pigtails Blonde, Classic Shades   
+9880, Bitmap Pink, Wild Blonde (BMP), Mole
+9881, Bitmap Pink, Tassle Hat, Clown Eyes Blue, Clown Nose   
+
+# marcs
+9883, Marc, Luxurious Beard, Clown Nose
+9884, Marc XL, Cap McD Visor (XL)
+9885, Marc XL, Bandana (XL), Eye Patch (XL)
+9886, Marc XL, Cowboy Hat (XL), Earring (XL)
+
 # readymades 
 9887,  Mundl
 9888,  Mundl, Sun Hat (A)
