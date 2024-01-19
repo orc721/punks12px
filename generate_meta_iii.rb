@@ -15,6 +15,50 @@ meta = recs.map { |rec| rec.values }
 specs = parse_data( <<DATA )
 
 
+ 
+# presidents
+9819, Joe
+9820, Joe (A), Cap Blue
+9821, Joe, Clown Eyes Blue, Clown Nose 
+9822, Joe, 3D Glasses
+9823, Joe, Regular Shades
+9824, Joe (A), Cap Blue, Regular Shades
+9825, Joe, Laser Eyes
+
+9826, Donald
+9827, Donald (A), Cap Red
+9828, Donald (A), Cap McD
+9829, Donald, Clown Eyes Green, Clown Nose
+9830, Donald, 3D Glasses
+9831, Donald, Laser Eyes
+9832, Donald, Regular Shades
+
+9833, Nikki
+9834, Nikki (A)
+9835, Nikki, Big Shades, Earring
+9836, Nikki, 3D Glasses
+9837, Nikki, Laser Eyes, Gold Chain
+9839, Nikki (A), VR
+9840, Nikki (B), Hoodie Red
+ 
+  
+# 1bits
+9841, Ape 1Bit, Regular Shades Red
+9842, Ape 1Bit, Regular Shades Green
+9843, Ape 1Bit, Regular Shades Blue
+9844, Ape 1Bit, Cap (1BIT), Regular Shades Red
+9845, Ape 1Bit, Cap (1BIT), Regular Shades Green
+9846, Ape 1Bit, Cap (1BIT), Regular Shades Blue
+9847, Ape 1Bit, Cap (1BIT), Maxi Biz Laser Eyes Red
+9849, Ape 1Bit, Cap (1BIT), Maxi Biz Laser Eyes Green
+9850, Ape 1Bit, Cap (1BIT), Maxi Biz Laser Eyes Blue
+9851, Bitmap 1Bit, Maxi Biz Laser Eyes Red
+9852, Bitmap 1Bit, Maxi Biz Laser Eyes Green
+9853, Bitmap 1Bit, Maxi Biz Laser Eyes Blue
+9854, Ape 1Bit
+9855, Bitmap 1Bit
+
+
 # bitmaps
 9856, Bitmap Orange
 9857, Bitmap Orange,  Red Mohawk (BMP)
