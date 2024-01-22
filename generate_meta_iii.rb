@@ -14,8 +14,28 @@ meta = recs.map { |rec| rec.values }
 # add more ordinal (sub1k) punks  
 specs = parse_data( <<DATA )
 
+ # punk rocks
+ 9795, Rock Gray
+ 9796, Rock Gray, Peak Spike Red (ROCK)
+ 9797, Rock Gray, Top Hat (ROCK)
+ 9798, Rock Gray, Knitted Cap (ROCK), 3D Glasses (ROCK)
+ 9800, Rock Block Gray
+ 9801, Rock Block Gray, 3D Glasses (ROCK)
 
- 
+ 9802, Rock Gray, Peak Spike (ROCK), Laser Eyes (ROCK)
+ 9803, Rock Gray, Laser Eyes (ROCK)
+ 9805, Rock Gold
+ 9806, Rock Gold, Peak Spike (ROCK), Laser Eyes (ROCK)
+ 9808, Rock Block Gold
+ 9809, Rock Block Gold, Laser Eyes (ROCK)
+
+ 9810, Rock Pink
+ 9812, Rock Pink, Peak Spike Blonde (ROCK), Laser Eyes Blue (ROCK)
+ 9813, Rock Pepe
+ 9814, Rock Pepe, Peak Spike Red (ROCK)
+ 9815, Rock Pepe, Top Hat (ROCK)
+ 9817, Rock Pepe, Cap Red (ROCK)
+
 # presidents
 9819, Joe
 9820, Joe (A), Cap Blue
@@ -190,9 +210,16 @@ specs = parse_data( <<DATA )
 DATA
 
 
+pp specs
+puts "  #{specs.size} record(s)"
+
 
 specs.each do |values|
-   id = values[0].to_i(0)
+   id = values[0].to_i(10)
+
+   puts "==> #{id}"
+   pp values
+
    meta[ id ] = [ 
                     id.to_s, 
                     values[1], 
@@ -210,6 +237,7 @@ File.open( "./punks12px.csv", "w:utf-8" ) do |f|
      f.write( "\n" )
    end
 end
+
 
 puts "bye"
 
