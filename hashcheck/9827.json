@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "results": [
+    {
+      "txid": "4c1a733a3d8c4dcb9c77faf1f1f6db967e0564830db90e8c8b88d62e7c53de06",
+      "inputindex": "0",
+      "inscriptionid": "4c1a733a3d8c4dcb9c77faf1f1f6db967e0564830db90e8c8b88d62e7c53de06i0",
+      "inscriptionnumber": "56927951",
+      "blockheight": "826901",
+      "contenttypestr": "image/png",
+      "contenthash": "ee2f40ad762d7290ede1d7d8861c85eec13b11417c2c36423d933800c856f8de",
+      "contentlength": "196",
+      "createdat": "2024-01-22T23:17:54.559Z"
+    }
+  ],
+  "count": 1,
+  "totalItems": "1",
+  "totalPages": 1,
+  "currentPage": 1
+}
