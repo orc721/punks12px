@@ -13,6 +13,34 @@ meta = recs.map { |rec| rec.values }
 ###
 # add more ordinal (sub1k) punks  
 specs = parse_data( <<DATA )
+# doge
+9768, Doge
+9769, Doge (A), Top Hat
+9770, Doge, Wild Hair (DOGE)
+9771, Doge, Regular Shades, Red Mohawk (DOGE)
+9772, Doge, Headband
+9773, Doge, Laser Eyes 
+
+9774, Doge Dark
+9776, Doge Dark (A), Bandana, Gold Chain
+9777, Doge Dark, Wild White Hair (DOGE)
+9779, Doge Dark, Big Shades, Earring (DOGE)
+9780, Doge Dark (A), Purple Hair (DOGE)
+9781, Doge Dark, Laser Eyes Gold
+
+9783, Doge Zombie
+9784, Doge Zombie, Crazy Hair
+9785, Doge Zombie, 3D Glasses
+9786, Doge Zombie (A), Cowboy Hat
+9787, Doge Zombie, Laser Eyes
+9788, Doge Zombie, Knitted Cap, Nerd Glasses, Earring (DOGE)
+
+9789, Doge Alien
+9790, Doge Alien (A), Cap Forward, Pipe
+9791, Doge Alien (A), Cap
+9792, Doge Alien, Headband
+9793, Doge Alien, Laser Eyes Blue
+9794, Doge Alien (A), Cap McD
 
  # punk rocks
  9795, Rock Gray
