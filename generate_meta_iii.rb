@@ -13,6 +13,35 @@ meta = recs.map { |rec| rec.values }
 ###
 # add more ordinal (sub1k) punks  
 specs = parse_data( <<DATA )
+
+
+# hood(ie) nation
+9746, Male 2, Luxurious Beard, Hoodie
+9747 ,Male 2, Luxurious Beard, Hood
+9748, Male 1, Normal Beard, Hoodie Dark
+9749, Male 1, Normal Beard, Hood Dark
+9750, Ape, Hoodie Light, Regular Shades
+9751, Ape, Hood Light
+9752, Female 3, Hoodie Pink, Big Shades
+9753, Female 3, Hood Pink
+9754, Female 2, Hood Pharoah
+9755, Ape, Hood Pharoah
+9756, Pepe, Hoodie Ice
+9757, Male 3, Luxurious Beard, Hoodie Ice, Regular Shades
+9758, Pepe, Noun Glasses Pink, Hood Pharoah Purple (A)
+
+# girls with pearl
+9759, Girl with Pearl
+9760, Girl with Pearl, VR Pro   
+9761, Girl with Pearl, Laser Eyes
+9762, Girl with Pearl (Pepe)
+9763, Girl with Pearl (Pepe), Pipe
+9764, Girl with Pearl, 3D Glasses
+9765, Girl with Pearl, Regular Shades
+9766, Girl with Pearl, Clown Nose  
+9767, Girl with Pearl (Bitmap Orange)
+
+
 # doge
 9768, Doge
 9769, Doge (A), Top Hat
