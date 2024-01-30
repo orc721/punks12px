@@ -3,7 +3,7 @@
 #    $ ruby sandbox/hashcheck.rb
 
 
-$LOAD_PATH.unshift( "../pixelart/ordbase/ordinals/lib" )
+$LOAD_PATH.unshift( "../../ordbase/ordbase/ordinals/lib" )
 require 'ordinals'
 
 
