@@ -1,4 +1,4 @@
-// items.js generated on 2024-02-08 13:49:59 UTC
+// items.js generated on 2024-02-12 08:09:57 UTC
 
  const items = [
   {
@@ -58637,7 +58637,7 @@
     "id": "537066d3b2c19f25a6b4439917d539f9ee55fa25fee8c4db1931c92b46983d3c",
     "name": "#9772",
     "image": "https://github.com/orc721/punks12px/raw/master/inscribe/punk9772.png",
-    "inscriptionNumber": 1
+    "inscriptionNumber": 2024
   },
   {
     "id": "0127dee2b54d68e58e4ebcc191f77ab0c058875c78c25ccde299480857ca4387",
@@ -58649,7 +58649,7 @@
     "id": "5766dc856afeee78e9a2566c87cedc2d893eba60e88eb78f369bf7f019b8b4bb",
     "name": "#9774",
     "image": "https://github.com/orc721/punks12px/raw/master/inscribe/punk9774.png",
-    "inscriptionNumber": 1
+    "inscriptionNumber": 2024
   },
   {
     "id": "45af708fbeaec52560914a23436f7462d2985ee2d8a2d952354437489ce1d133",
@@ -59477,7 +59477,7 @@
     "id": "2d89235582f1617eb5bdbb87216555346508cbf8c3f16b7413451b587d5d47b1",
     "name": "#9912",
     "image": "https://github.com/orc721/punks12px/raw/master/inscribe/punk9912.png",
-    "inscriptionNumber": 1
+    "inscriptionNumber": 2024
   },
   {
     "id": "367da6094c92ec34dfc174e16c867e067535fbfe639866327689a7105333ea9b",
@@ -59519,7 +59519,7 @@
     "id": "aae54693a86d36f23f9223411d4ba04c081288c1e04cb5d4e88d51ce6a520ef3",
     "name": "#9919",
     "image": "https://github.com/orc721/punks12px/raw/master/inscribe/punk9919.png",
-    "inscriptionNumber": 1
+    "inscriptionNumber": 2024
   },
   {
     "id": "06c52260e1195bb8a7fbbcbb5e65cc5f9e5d0743e9c853bf04ea84e00452d913",
@@ -59747,7 +59747,7 @@
     "id": "0f3986112804968bc46b7b0510eb231ea7c172060a57cc0d4dff9ff5c035c914",
     "name": "#9957",
     "image": "https://github.com/orc721/punks12px/raw/master/inscribe/punk9957.png",
-    "inscriptionNumber": 1
+    "inscriptionNumber": 2024
   },
   {
     "id": "20f7c43aae464f1c90908f9aafa8dc1011bf7f42837452c15d67446c6652be3d",
