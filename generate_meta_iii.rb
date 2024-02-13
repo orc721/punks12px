@@ -14,6 +14,26 @@ meta = recs.map { |rec| rec.values }
 # add more ordinal (sub1k) punks  
 specs = parse_data( <<DATA )
 
+## add more pork (types)
+  ## add more types
+  9701, Pork Orange, Red Mohawk (PORK), Choker
+  9703, Pork Orange, VR Pro
+  9704, Pork Orange, Laser Eyes
+  9705, Pork Alien, Cap Forward, Pipe
+  9706, Pork Alien, Bandana
+  9708, Pork Alien, Headband
+  9710, Pork Pink, Mole, Gold Chain
+  9711, Pork Pink, VR Pro
+  9712, Pork Pink (AAA), Hoodie Dark (PORK)
+  9713, Pork Gold, Cap McD
+  9714, Pork Gold (AAA), Hood Dark (PORK)
+  9715, Pork Gold, Laser Eyes
+  9716, Pork Orc,  VR Pro
+  9717, Pork Orc (AAA), Hoodie Light (PORK)
+  9718, Pork Blue, Regular Shades, Cap Burger King
+  9719, Pork Blue, Knitted Cap, Gold Chain
+  9720, Pork Alien Red, Bandana
+  9721, Pork Alien Red (AAA), Hoodie (PORK)
 
 ## add more 1bits
 9723, Joe 1Bit
