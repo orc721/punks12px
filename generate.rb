@@ -15,7 +15,7 @@ specs.each_with_index do |rec, i|
      
 
      ## next unless [9935, 9936].include?( i )
-     next if i < 9730
+     next if i < 9700
 
      base        = rec['type']
      attributes = (rec['attributes'] || '' ).split( '/').map { |attr| attr.strip }

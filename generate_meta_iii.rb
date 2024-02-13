@@ -14,16 +14,34 @@ meta = recs.map { |rec| rec.values }
 # add more ordinal (sub1k) punks  
 specs = parse_data( <<DATA )
 
+
+## add more 1bits
+9723, Joe 1Bit
+9724, Joe 1Bit, Regular Shades Blue
+9725, Joe 1Bit, Maxi Biz Laser Eyes Blue
+9726, Donald 1Bit
+9727, Donald 1Bit, Regular Shades Red
+9728, Donald 1Bit, Maxi Biz Laser Eyes Red
+9729, Nikki 1Bit
+9730, Nikki 1Bit, Regular Shades Red
+9731, Nikki 1Bit, Maxi Biz Laser Eyes Red
+
+9732, Pork 1Bit, Regular Shades Red
+9733, Pork 1Bit, Regular Shades Green
+9735, Pork 1Bit, Regular Shades Blue
+9736, Pork 1Bit
+
 # add pork / pig(gie)s
-9737, Pig
-9738, Pig, Bandana, Gold Chain 
-9739, Pig, 3D Glasses
-9740, Pig, Regular Shades, Red Mohawk (PIG) 
-9741, Pig, Headband
-9742, Pig, Laser Eyes
-9743, Pig, Cap Forward, Pipe
-9744, Pig, VR Pro
-9745, Pig, Clown Eyes Green, Cap McD
+9737, Pork
+9738, Pork, Bandana, Gold Chain 
+9739, Pork, 3D Glasses
+9740, Pork, Regular Shades, Red Mohawk (PORK) 
+9741, Pork, Headband
+9742, Pork, Laser Eyes
+9743, Pork, Cap Forward, Pipe
+9744, Pork, VR Pro
+9745, Pork, Clown Eyes Green, Cap McD
+
 
 # hood(ie) nation
 9746, Male 2, Luxurious Beard, Hoodie
