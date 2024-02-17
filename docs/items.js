@@ -1,4 +1,4 @@
-// items.js generated on 2024-02-14 10:22:14 UTC
+// items.js generated on 2024-02-17 12:34:26 UTC
 
  const items = [
   {
@@ -58379,7 +58379,7 @@
     "id": "0f2af3fe6441207299a879a705d7e4ec6a68d907aeb62bbd7ed6d0f29d5ff2e3",
     "name": "#9729",
     "image": "https://github.com/orc721/punks12px/raw/master/inscribe/punk9729.png",
-    "inscriptionNumber": 1
+    "inscriptionNumber": 2024
   },
   {
     "id": "9bfc38889fc78845ae33491a17dd59fba50392b48b061caafd0db37ac5b1cff7",
