@@ -41,8 +41,8 @@ pp items[0,2]
 
 # ids = (9880..9999)  ## hash check last 100
 # ids = (5000..9999)  ## hash check last 100
-ids = (9700..9999)
 # ids = [9935, 9936]
+ids = (9700..9999)
 # ids = (0..9999)
 ids.each do |i|
     num = '%04d' % i
